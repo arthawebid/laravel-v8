@@ -5,11 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class produkcontroller extends Controller
-{
-    //property untuk index
-    public function index()
-    {
-    	$isi = "ini merupakan isi index dalam controller produkController";
-    	return $isi;
+ {
+    //Property untuk Index
+    public function index(){
+        $produk = "Sepatu JN 325";
+        return view('produk/index',compact('produk'));
+    }
+    //property showproduk
+    public function showproduk(){
+        $produk = ["Sepatu JN 325","Minuman Bersoda","Buku Sejarah","Mouse Pad"];
+        return view('produk.showproduk',compact('produk'));
     }
 }

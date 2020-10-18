@@ -30,3 +30,9 @@ echo "<a href='".route('about')."'>page about </a>";
 });
 
 Route::get('/produk', [produkcontroller::class,'index']); 
+
+Route::get('/latihanview01', function () {
+    return view("latihan01") ;
+}); 
+
+Route::get('/produk/showproduk',[produkController::class,'showproduk']);
