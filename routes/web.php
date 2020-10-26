@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', function () {
+    return view('layout.index');
+});
+Route::get('/', function () {
+    return view('layout.about');
+});
+
 Route::get('/about', function () {
    echo "ini merupakan contoh sebuah page (page about)"  ;
 })->name("about");
