@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\utsController;
+use App\Http\Controllers\prak9Controller;
+use App\Http\Controllers\prak7Controller;
+/*
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,4 +45,10 @@ Route::get('/', function () {
 //    return view("latihan01") ;
 //}); 
 
+Route::get('/prak7',[utsController::class,'index']);
+
 Route::get('/produk',[utsController::class,'index']);
+
+Route::get('/prak9_1',[prak9Controller::class,'QB_tgs1']);
+Route::get('/prak9_2',[prak9Controller::class,'QB_tgs2']);
+Route::get('/prak9_3',[prak9Controller::class,'QB_tgs3']);
