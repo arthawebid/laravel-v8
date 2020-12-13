@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\produks;
+use App\Http\Models\produks; //ini salah seharusnya use App\Models\produks; 
 
 class prak10Controller extends Controller
 {
